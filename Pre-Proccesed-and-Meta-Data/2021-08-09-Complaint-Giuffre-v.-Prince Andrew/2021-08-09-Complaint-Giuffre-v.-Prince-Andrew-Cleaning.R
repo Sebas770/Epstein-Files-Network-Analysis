@@ -1,4 +1,4 @@
-##Cleaning Data 2021-08-09-Complaint-Giuffre-v.-Prince Andrew
+##Cleaning Data 2021-08-09-Complaint-Giuffre-v.-Prince-Andrew
 # 0. Load libraries
 library(tidyverse)
 library(readr)
@@ -18,12 +18,12 @@ raw_text <- paste(raw_text, collapse = "\n")
 
 # 4. Save as a file txt
 
-write_file(raw_text, "2021-08-09-Complaint-Giuffre-v.-Prince Andrew.txt")
+write_file(raw_text, "2021-08-09-Complaint-Giuffre-v.-Prince-Andrew.txt")
 
 
 # 5. Load the txt file.
 
-raw_text <- read_file("2021-08-09-Complaint-Giuffre-v.-Prince Andrew.txt")
+raw_text <- read_file("2021-08-09-Complaint-Giuffre-v.-Prince-Andrew.txt")
 
 
 
@@ -42,4 +42,4 @@ text_clean <- raw_text %>%
 
 
 # 7. Save as a .txt
-write_file(text_clean, "2021-08-09-Complaint-Giuffre-v.-Prince Andrew-C.txt")
+write_file(text_clean, "2021-08-09-Complaint-Giuffre-v.-Prince-Andrew-C.txt")
