@@ -1,4 +1,4 @@
-  ##Cleaning Data 2020-06-29-Indictmeni-USA-v.-Maxwell
+  ##Cleaning Data 2020-06-29-Indictment-USA-v.-Maxwell
   # 0. Load libraries
   library(tidyverse)
   library(readr)
@@ -7,7 +7,7 @@
 
   # 1. Load the txt file.
   
-  raw_text <- read_file("2020-06-29-Indictmeni-USA-v.-Maxwell.txt")
+  raw_text <- read_file("2020-06-29-Indictment-USA-v.-Maxwell.txt")
   
   
   
@@ -23,6 +23,6 @@
   
   
   # 3. Save as a .txt
-  write_file(text_clean, "2020-06-29-Indictmeni-USA-v.-Maxwell-C.txt")
+  write_file(text_clean, "2020-06-29-Indictment-USA-v.-Maxwell-C.txt")
 
   
