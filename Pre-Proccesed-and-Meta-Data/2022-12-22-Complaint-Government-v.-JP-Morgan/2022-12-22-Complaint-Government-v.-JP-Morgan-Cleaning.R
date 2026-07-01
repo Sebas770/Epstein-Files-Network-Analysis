@@ -1,4 +1,4 @@
-  ##Cleaning Data 2022-12-22-Complaint-Government-v.-JPMorgan
+  ##Cleaning Data 2022-12-22-Complaint-Government-v.-JP-Morgan
   # 0. Load libraries
   library(tidyverse)
   library(readr)
@@ -18,12 +18,12 @@
   
   # 4. Save as a file txt
   
-  write_file(raw_text, "2022-12-22-Complaint-Government-v.-JPMorgan.txt")
+  write_file(raw_text, "2022-12-22-Complaint-Government-v.-JP-Morgan.txt")
   
   
   # 5. Load the txt file.
   
-  raw_text <- read_file("2022-12-22-Complaint-Government-v.-JPMorgan.txt")
+  raw_text <- read_file("2022-12-22-Complaint-Government-v.-JP-Morgan.txt")
   
   
   
@@ -42,4 +42,4 @@
   
   
   # 7. Save as a .txt
-  write_file(text_clean, "2022-12-22-Complaint-Government-v.-JPMorgan-C.txt")
+  write_file(text_clean, "2022-12-22-Complaint-Government-v.-JP-Morgan-C.txt")

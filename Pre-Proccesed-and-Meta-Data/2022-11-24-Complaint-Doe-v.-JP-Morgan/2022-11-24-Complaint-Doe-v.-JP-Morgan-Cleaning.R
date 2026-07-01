@@ -1,4 +1,4 @@
-  ##Cleaning Data 2022-11-24-Complaint-Doe-v.-JPMorgan
+  ##Cleaning Data 2022-11-24-Complaint-Doe-v.-JP-Morgan
   # 0. Load libraries
   library(tidyverse)
   library(readr)
@@ -18,12 +18,12 @@
   
   # 4. Save as a file txt
   
-  write_file(raw_text, "2022-11-24-Complaint-Doe-v.-JPMorgan.txt")
+  write_file(raw_text, "2022-11-24-Complaint-Doe-v.-JP-Morgan.txt")
   
   
   # 5. Load the txt file.
   
-  raw_text <- read_file("2022-11-24-Complaint-Doe-v.-JPMorgan.txt")
+  raw_text <- read_file("2022-11-24-Complaint-Doe-v.-JP-Morgan.txt")
   
   
   
@@ -37,9 +37,11 @@
     str_replace_all("\n", " ") %>%
     
     # Remove extra spaces
-    str_squish()
+    str_squish()  %>%
+ 
+    str_remove_all("Case 1:22-cv-10019-JSR Document 1 Filed 11/24/22 Page [0-9]+ of 75")
   
   
   
   # 7. Save as a .txt
-  write_file(text_clean, "2022-11-24-Complaint-Doe-v.-JPMorgan-C.txt")
+  write_file(text_clean, "2022-11-24-Complaint-Doe-v.-JP-Morgan-C.txt")
